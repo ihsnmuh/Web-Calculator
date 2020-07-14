@@ -119,3 +119,17 @@ const inverseNumber = () => {
 	currentNumber = currentNumber * -1;
 }
 
+const percentage = document.querySelector('.percentage');
+
+percentage.addEventListener('click', (event) => {
+    persentageNumber(event.target.value);
+    updateScreen(currentNumber);
+});
+
+
+const percentageNumber = () => {
+    if (currentNumber === '0') {
+        return;
+    }
+    currentNumber = currentNumber / 100;
+}

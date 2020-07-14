@@ -119,15 +119,15 @@ const inverseNumber = () => {
 	currentNumber = currentNumber * -1;
 }
 
-const percentage = document.querySelector('.percentage');
+const persentage = document.querySelector('.persentage');
 
-percentage.addEventListener('click', (event) => {
+persentage.addEventListener('click', (event) => {
     persentageNumber(event.target.value);
     updateScreen(currentNumber);
 });
 
 
-const percentageNumber = () => {
+const persentageNumber = () => {
     if (currentNumber === '0') {
         return;
     }
